@@ -1,0 +1,10 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+// Подключение своих SCSS файлов
+@import "my";
+@import "header";
+@import "content";
+@import "footer";
