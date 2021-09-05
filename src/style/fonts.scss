@@ -1,22 +1,22 @@
 @font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro.eot');
-  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/GothamPro.woff2') format('woff2'),
-      url('../fonts/GothamPro.woff') format('woff'),
-      url('../fonts/GothamPro.ttf') format('truetype');
+  font-family: 'Journal Sans';
+  src: url('../fonts/JournalSans.eot');
+  src:
+      url('../fonts/JournalSans.woff2') format('woff2'),
+      url('../fonts/JournalSans.woff') format('woff'),
+      url('../fonts/JournalSans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Firenight';
-  src: url('Firenight-Regular.eot');
-  src: url('../fonts/Firenight-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Firenight-Regular.woff2') format('woff2'),
-      url('../fonts/Firenight-Regular.woff') format('woff'),
-      url('../fonts/Firenight-Regular.ttf') format('truetype');
+  font-family: 'SFPro';
+  src: url('../fonts/SFProDisplay-Regular.eot');
+  src:
+      url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+      url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
