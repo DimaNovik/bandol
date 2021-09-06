@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'JournalSans';
-  src: url("../../fonts/JournalSans.eot");
-  src: url("../../fonts/JournalSans.woff2") format("woff2"), url("../../fonts/JournalSans.woff") format("woff"), url("../../fonts/JournalSans.ttf") format("truetype");
+  src: url("../fonts/JournalSans.eot");
+  src: url("../fonts/JournalSans.woff2") format("woff2"), url("../fonts/JournalSans.woff") format("woff"), url("../fonts/JournalSans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'SFPro';
-  src: url("../../fonts/SFProDisplay-Regular.eot");
-  src: url("../../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../../fonts/SFProDisplay-Regular.woff") format("woff"), url("../../fonts/SFProDisplay-Regular.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Regular.eot");
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -25,7 +25,7 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: #D4D4D4;
+  background-color: #CFCFCF;
   scroll-behavior: smooth; }
 
 ul {
@@ -654,6 +654,14 @@ template {
   .title-lg {
     font-size: 60px;
     line-height: 54px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .title-lg {
+        font-size: 40px;
+        line-height: 36px; } }
+    @media (min-width: 320px) and (max-width: 320px) {
+      .title-lg {
+        font-size: 28px;
+        line-height: 24px; } }
   .title-md {
     font-size: 50px;
     line-height: 50px; }
@@ -665,50 +673,31 @@ template {
     line-height: 30px; }
 
 .text {
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 0; }
   .text-lg {
     font-size: 20px; }
   .text-md {
     font-size: 18px; }
   .text-sm {
-    font-size: 16px; }
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: .9px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .text-sm {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: .8px; } }
   .text-smm {
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: .6px; }
   .text-xs {
-    font-size: 14px;
-    line-height: 1.4; }
+    font-size: 10px;
+    line-height: 27px;
+    letter-spacing: 3px; }
   .text-margin {
     margin-top: 30px; }
-
-.header {
-  padding: 45px 81px; }
-  .header__wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .header__left, .header__right {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-  .header__menu {
-    margin-left: 30px; }
-
-.footer {
-  background-color: #0F3029; }
-
-.social {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-  .social__item:not(:last-child) {
-    margin-right: 15px; }
-  .social__link {
-    color: #313131; }
 
 .logo {
   width: 93px;
@@ -717,38 +706,82 @@ template {
     max-width: 100%;
     max-height: 100%; }
 
-.menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-  .menu__link {
+.main {
+  height: 100vh;
+  min-height: 650px; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .main {
+      min-height: 100%; } }
+
+.plug {
+  height: 100%;
+  background-image: url("../img/main_bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .plug {
+      background-image: url("../img/main_bg_mob.jpg"); } }
+  .plug__area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 100%;
+    padding: 0 81px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .plug__area {
+        padding: 0 20px; } }
+  .plug__head {
+    padding: 30px 0;
+    border-bottom: 1px solid #CFCFCF; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .plug__head {
+        padding: 20px 0; } }
+  .plug__head_logo {
+    width: 93px;
+    text-align: center; }
+  .plug__middle {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    max-height: 24px;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: #FFBCA2; }
-  .menu__link_item {
-    width: 100%;
-    height: 1px;
-    background-color: #313131; }
-    .menu__link_item:first-child {
-      margin-bottom: 6px; }
-  .menu__label {
-    margin-left: 18px; }
+    -ms-flex: 1;
+        flex: 1;
+    margin-top: 200px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .plug__middle {
+        margin-top: 165px; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+    .plug__middle {
+      margin-top: 100px; } }
+  .plug__title {
+    margin-bottom: 38px;
+    opacity: 0;
+    -webkit-animation: fade-in 2s 1.5s ease-in-out forwards;
+            animation: fade-in 2s 1.5s ease-in-out forwards; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .plug__title {
+        margin-bottom: 20px; } }
+  .plug__text {
+    opacity: 0;
+    -webkit-animation: fade-in 2s 3.5s ease-in-out forwards;
+            animation: fade-in 2s 3.5s ease-in-out forwards; }
+  .plug__bottom {
+    padding-bottom: 20px; }
 
-.change_lang {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

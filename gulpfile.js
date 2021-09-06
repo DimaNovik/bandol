@@ -39,13 +39,13 @@ var path = {
         css_build: 'build/css/*.css',
         js_build: 'build/js/*.js'
     },
-    clean: './build/*'
+    clean: 'build/*'
 };
 
 /* настройки сервера */
 var config = {
     server: {
-        baseDir: './build'
+        baseDir: 'build'
     },
     notify: false,
     version: {
