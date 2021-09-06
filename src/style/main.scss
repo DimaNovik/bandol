@@ -1,9 +1,10 @@
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
-@import "fonts";
-@import "variables";
-@import "mixins";
+@import "base/fonts";
+@import "base/variables";
 
 // Подключение своих SCSS файлов
-@import "base";
-@import "common/header";
-@import "common/footer";
+@import "base/index";
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/index";
