@@ -1,0 +1,18 @@
+.header {
+  padding: 45px 81px;
+
+  &__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+  &__left, &__right {
+	display: flex;
+	align-items: center;
+  }
+
+  &__menu {
+	margin-left: 30px;
+  }
+}

@@ -1,0 +1,42 @@
+.title {
+  font-family: 'JournalSans', sans-serif;
+  margin: 0;
+  &-lg {
+	font-size: 60px;
+	line-height: 54px;
+  }
+  &-md {
+	font-size: 50px;
+	line-height: 50px;
+  }
+  &-sm {
+	font-size: 44px;
+	line-height: 40px;
+  }
+  &-xs {
+	font-size: 30px;
+	line-height: 30px;
+  }
+}
+.text {
+  font-size: 14px;
+  &-lg {
+	font-size: 20px;
+  }
+  &-md {
+	font-size: 18px;
+  }
+  &-sm {
+	font-size: 16px;
+  }
+  &-smm {
+	font-size: 12px;
+  }
+  &-xs {
+	font-size: 14px;
+	line-height: 1.4;
+  }
+  &-margin {
+	margin-top: 30px;
+  }
+}
