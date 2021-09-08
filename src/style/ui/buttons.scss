@@ -3,6 +3,26 @@
   align-items: center;
   justify-content: center;
 
+  &--main {
+	width: 83px;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid $white;
+	transition: background-color .3s ease;
+
+	.icon {
+	  width: 12px;
+	  height: 8px;
+
+	  &--rotate {
+		transform: rotate(180deg);
+	  }
+	}
+	&:hover {
+		background-color: $orange;
+	}
+  }
+
   &--play {
 	width: 109px;
 	height: 109px;
@@ -15,5 +35,13 @@
 	height: 109px;
 	border-radius: 50%;
 	background-color: $black3;
+	.icon {
+	  width: 12px;
+	  height: 8px;
+
+	  &--rotate {
+		transform: rotate(180deg);
+	  }
+	}
   }
 }

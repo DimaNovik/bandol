@@ -11,4 +11,15 @@
 	border-top: 1px solid rgba($white, .6);
 	border-bottom: 1px solid rgba($white, .6);
   }
+
+  &__date {
+	display: flex;
+	.line {
+	  display: block;
+	  width: 60px;
+	  height: 2px;
+	  background-color: $white;
+	  transform: rotate(-65deg);
+	}
+  }
 }

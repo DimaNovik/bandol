@@ -27,6 +27,9 @@
 .text {
   font-size: 14px;
   margin: 0;
+  &-xlg {
+	font-size: 30px;
+  }
   &-lg {
 	font-size: 20px;
   }
@@ -35,6 +38,9 @@
   }
   &-sm {
 	font-size: 16px;
+  }
+  &-sm14 {
+	font-size: 14px;
   }
   &-smm {
 	font-size: 12px;
