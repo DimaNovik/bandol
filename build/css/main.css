@@ -697,7 +697,8 @@ template {
     font-size: 16px; }
   .text-smm {
     font-size: 12px;
-    line-height: 14px; }
+    line-height: 14px;
+    letter-spacing: .8px; }
   .text-xs {
     font-size: 15px;
     line-height: 20px; }
@@ -730,21 +731,27 @@ template {
 .footer {
   padding: 30px 80px 32px;
   background-color: #0F3029; }
+  .footer__top {
+    width: 100px;
+    text-align: center; }
   .footer__contact_list {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-top: 25px; }
   .footer__middle {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    padding: 0 105px 0 130px; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 33px 0 42px 24px; }
+    .footer__middle .title {
+      font-weight: 700;
+      letter-spacing: 2.4px; }
   .footer__middle_left {
-    width: 50%;
+    padding-right: 140px;
     border-right: 1px solid #415350; }
   .footer__middle_right {
-    width: 50%;
-    padding-left: 140px; }
+    padding-left: 137px; }
   .footer__bottom {
     display: -ms-flexbox;
     display: flex;
@@ -845,6 +852,21 @@ template {
     padding: 0 80px;
     border-top: 1px solid rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+
+.contact-list--left {
+  margin-right: 55px; }
+
+.contact-list--left-second {
+  margin-right: 45px; }
+
+.contact-list__item:not(:last-child) {
+  margin-bottom: 20px; }
+
+.contact-list__item .title {
+  mso-table-top: -8px;
+  margin-left: -5px;
+  font-weight: 400;
+  letter-spacing: -2px; }
 
 .section-video {
   padding: 30px 80px 80px 207px; }
