@@ -1,3 +1,25 @@
 .footer {
+  padding: 30px 80px 32px;
   background-color: $green;
+
+  &__contact_list {
+    display: flex;
+  }
+  &__middle {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 105px 0 130px;
+  }
+  &__middle_left {
+    width: 50%;
+    border-right: 1px solid $green2;
+  }
+  &__middle_right {
+    width: 50%;
+    padding-left: 140px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
 }

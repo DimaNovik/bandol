@@ -1,0 +1,19 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &--play {
+	width: 109px;
+	height: 109px;
+	border-radius: 50%;
+	background-color: $orange;
+  }
+
+  &--black {
+	width: 109px;
+	height: 109px;
+	border-radius: 50%;
+	background-color: $black3;
+  }
+}

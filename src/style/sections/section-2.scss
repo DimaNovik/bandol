@@ -1,0 +1,26 @@
+.section-posts {
+  padding: 160px 210px 160px 80px;
+  &__title {
+	display: flex;
+  }
+  &__more {
+	padding-top: 20px;
+  }
+  &__title_right {
+	flex: 1;
+	padding-left: 150px;
+  }
+  &__posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 260px;
+	margin-top: 80px;
+  }
+  &__btn {
+	display: flex;
+	justify-content: center;
+	padding-left: 250px;
+	margin-top: 80px;
+  }
+}

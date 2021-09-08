@@ -1,0 +1,14 @@
+.slider-info {
+  border-radius: 4px;
+  padding: 10px 0;
+  background-color: $black3;
+
+  &__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 80px;
+	border-top: 1px solid rgba($white, .6);
+	border-bottom: 1px solid rgba($white, .6);
+  }
+}

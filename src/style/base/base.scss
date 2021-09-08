@@ -44,3 +44,19 @@ button {
 .center {
   text-align: center;
 }
+
+.link {
+  color: $black;
+  &--white {
+    color: $white;
+  }
+  &--black2 {
+    color: $black2;
+  }
+  &--none {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

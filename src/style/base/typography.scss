@@ -1,5 +1,6 @@
 .title {
   font-family: 'JournalSans', sans-serif;
+  font-weight: 400;
   margin: 0;
   &-lg {
 	font-size: 60px;
@@ -17,9 +18,15 @@
 	font-size: 30px;
 	line-height: 30px;
   }
+  &-xxs {
+	font-size: 11px;
+	line-height: 20px;
+	letter-spacing: 1.5px;
+  }
 }
 .text {
   font-size: 14px;
+  margin: 0;
   &-lg {
 	font-size: 20px;
   }
@@ -31,10 +38,19 @@
   }
   &-smm {
 	font-size: 12px;
+	line-height: 14px;
   }
   &-xs {
-	font-size: 14px;
-	line-height: 1.4;
+	font-size: 15px;
+	line-height: 20px;
+  }
+  &-xxs {
+	font-size: 10px;
+	line-height: 18px;
+  }
+  &-xxs2 {
+	font-size: 10px;
+	line-height: 12px;
   }
   &-margin {
 	margin-top: 30px;
