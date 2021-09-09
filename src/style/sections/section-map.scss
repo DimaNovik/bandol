@@ -6,4 +6,24 @@
   background-position: 60% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__map {
+    width: 450px;
+    height: 450px;
+  }
+
+  &__info {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 240px;
+    margin-top: -10px;
+    transform: translate(0, -50%);
+  }
 }

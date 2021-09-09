@@ -9,6 +9,7 @@
     "url": "git://github.com/alexsoin/gulp-start-projet.git"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.22",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6"

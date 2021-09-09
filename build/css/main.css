@@ -1035,3 +1035,20 @@ template {
   background-position: 60% 50%;
   background-size: contain;
   background-repeat: no-repeat; }
+  .section-map__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: relative; }
+  .section-map__map {
+    width: 450px;
+    height: 450px; }
+  .section-map__info {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 240px;
+    margin-top: -10px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }

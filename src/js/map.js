@@ -1,4 +1,3 @@
-// Импортируем другие js-файлы
 
 // Low-detail map
 let chart = am4core.create("map", am4maps.MapChart);
