@@ -29,6 +29,16 @@
 	height: 109px;
 	border-radius: 50%;
 	background-color: $orange;
+
+	@include mobile() {
+	  width: 54px;
+	  height: 54px;
+
+	  svg {
+		width: 12px;
+		height: 14px;
+	  }
+	}
   }
 
   &--black {

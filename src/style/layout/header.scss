@@ -6,6 +6,10 @@
   background-color: $grey;
   z-index: 1;
 
+  @include mobile() {
+	padding: 10px 15px;
+  }
+
   &__wrapper {
 	display: flex;
 	align-items: center;

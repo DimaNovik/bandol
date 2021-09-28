@@ -1,0 +1,16 @@
+.section-phyl {
+  height: 100vh;
+  padding: 30px 10px 30px 80px;
+  background-image: url("/img/sections/phyl_fon.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mobile() {
+    padding: 30px 15px 30px 15px;
+  }
+
+  &__title {
+	color: rgba(#FFFFFF, .5);
+  }
+}

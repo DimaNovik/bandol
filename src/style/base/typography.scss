@@ -9,10 +9,20 @@
   &-md {
 	font-size: 50px;
 	line-height: 50px;
+
+	@include mobile() {
+	  font-size: 22px;
+	  line-height: 22px;
+	}
   }
   &-sm {
 	font-size: 44px;
 	line-height: 40px;
+
+	@include mobile() {
+	  font-size: 22px;
+	  line-height: 20px;
+	}
   }
   &-xs {
 	font-size: 30px;
@@ -51,6 +61,11 @@
 	font-size: 15px;
 	line-height: 20px;
     letter-spacing: 0.65px;
+
+	@include mobile() {
+	  font-size: 10px;
+	  line-height: 13px;
+	}
   }
   &-xxs {
 	font-size: 10px;

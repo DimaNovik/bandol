@@ -1,6 +1,11 @@
 .footer {
   padding: 30px 80px 32px;
   background-color: $green;
+
+  @include mobile() {
+    padding: 30px 15px 32px;
+  }
+
   &__top {
     width: 100px;
     text-align: center;
@@ -13,7 +18,12 @@
   &__middle {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 33px 0 42px 24px;
+
+    @include mobile() {
+      padding: 13px 0 22px 0;
+    }
 
     .title {
       font-weight: 700;
@@ -23,12 +33,32 @@
   &__middle_left {
     padding-right: 140px;
     border-right: 1px solid $green2;
+
+    @include mobile() {
+      padding-right: 0;
+      border-right: none;
+    }
   }
   &__middle_right {
     padding-left: 137px;
+
+    @include mobile() {
+      padding-left: 0;
+    }
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mobile() {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &__copyright {
+    @include mobile() {
+      margin-top: 15px;
+    }
   }
 }

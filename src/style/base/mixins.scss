@@ -14,7 +14,7 @@
 // --------------------------------------------------
 
 @mixin mobile {
-  @media (min-width: #{$mobileWidth}) {
+  @media (min-width: #{$mobileWidth}) and (max-width: #{$largeMobileWidth}) {
     @content;
   }
 }
@@ -26,7 +26,7 @@
 }
 
 @mixin tablet {
-  @media (min-width: #{$tabletWidth}) {
+  @media (min-width: #{$largeMobileWidth}) and (max-width: #{$tabletWidth}) {
     @content;
   }
 }

@@ -1,9 +1,20 @@
 .contact-list {
+  @include mobile() {
+	width: 50%;
+  }
   &--left {
 	margin-right: 55px;
+
+	@include mobile() {
+	  margin-right: 20px;
+	}
   }
   &--left-second {
 	margin-right: 45px;
+
+	@include mobile() {
+	  margin-right: 0;
+	}
   }
   &__item {
 	&:not(:last-child) {

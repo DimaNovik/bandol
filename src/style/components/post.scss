@@ -3,7 +3,7 @@
 
   &:nth-child(even) {
 	padding-top: 120px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
   }
 
   &--offset {
@@ -13,7 +13,7 @@
   &__title {
 	display: inline-flex;
 	min-height: 90px;
-	padding-right: 65px;
+	padding-right: 55px;
 	margin-bottom: 10px;
 	text-align: right;
 
@@ -23,7 +23,7 @@
   }
 
   &__date {
-	padding-right: 65px;
+	padding-right: 55px;
 	margin-bottom: 10px;
 	text-align: right;
   }
@@ -36,7 +36,7 @@
   }
 
   &__label {
-	padding-right: 85px;
+	padding-right: 55px;
 	margin-top: 10px;
 	text-align: right;
   }
