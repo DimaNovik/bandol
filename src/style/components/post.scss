@@ -1,13 +1,28 @@
 .post {
   width: 370px;
 
+  @include mobile() {
+	width: 258px;
+  }
+
   &:nth-child(even) {
 	padding-top: 120px;
 	margin-bottom: 0;
+
+	@include mobile() {
+	  padding-top: 0;
+	  padding-left: 80px;
+	}
   }
+
+
 
   &--offset {
 	margin-bottom: 95px;
+
+	@include mobile() {
+	  margin-bottom: 34px;
+	}
   }
 
   &__title {
@@ -33,6 +48,12 @@
 	max-width: 100%;
 	max-height: 237px;
 	object-fit: cover;
+
+	@include mobile() {
+	  width: 100%;
+	  max-height: 167px;
+
+	}
   }
 
   &__label {

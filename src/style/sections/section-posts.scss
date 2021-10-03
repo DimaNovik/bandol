@@ -41,7 +41,6 @@
   &__btn {
 	display: flex;
 	justify-content: center;
-	padding-left: 250px;
 	margin-top: 80px;
 
 	@include mobile() {

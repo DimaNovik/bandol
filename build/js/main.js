@@ -2,7 +2,6 @@
 
 // Low-detail map
 let chart = am4core.create("map", am4maps.MapChart);
-console.log(am4geodata_lang_RU);
 chart.geodataNames = am4geodata_lang_RU;
 chart.geodata = am4geodata_franceHigh;
 

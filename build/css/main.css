@@ -888,11 +888,21 @@ template {
 
 .post {
   width: 370px; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .post {
+      width: 258px; } }
   .post:nth-child(even) {
     padding-top: 120px;
     margin-bottom: 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .post:nth-child(even) {
+        padding-top: 0;
+        padding-left: 80px; } }
   .post--offset {
     margin-bottom: 95px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .post--offset {
+        margin-bottom: 34px; } }
   .post__title {
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -911,6 +921,10 @@ template {
     max-width: 100%;
     max-height: 237px;
     object-fit: cover; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .post__img {
+        width: 100%;
+        max-height: 167px; } }
   .post__label {
     padding-right: 55px;
     margin-top: 10px;
@@ -1084,7 +1098,6 @@ template {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    padding-left: 250px;
     margin-top: 80px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .section-posts__btn {
