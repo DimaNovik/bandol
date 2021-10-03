@@ -71,13 +71,18 @@ svg {
   margin: 0 auto;
 
   &__post {
-    max-width: 890px;
+    width: 890px;
+    max-width: 100%;
     margin: 0 auto 0 23.5%;
 
     @include mobile() {
-      max-width: 100%;
-      margin: 0 auto 0 0;
-      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    @include tablet() {
+      width: 700px;
+      margin: 0 auto;
+      padding: 0;
     }
   }
 }

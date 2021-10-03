@@ -2,7 +2,7 @@
   padding: 160px 0 160px 0;
 
   @include mobile() {
-	padding: 60px 0 40px 0;
+	padding: 60px 15px 40px 15px;
   }
   &__title {
 	display: flex;
@@ -12,6 +12,10 @@
 	  flex-direction: row-reverse;
 	  padding-left: 15px;
 	  padding-right: 15px;
+	}
+
+	@include tablet() {
+		padding-left: 40px;
 	}
   }
   &__more {
@@ -37,6 +41,7 @@
 	justify-content: space-between;
 	padding-left: 0px;
 	margin-top: 80px;
+
   }
   &__btn {
 	display: flex;

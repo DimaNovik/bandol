@@ -5,9 +5,17 @@
 	&:not(:last-child) {
 	  margin-bottom: 20px;
 	}
+
+	  @include tablet() {
+		  width: 74px;
+		  height: 47px;
+		  &:not(:last-child) {
+			  margin-bottom: 13px;
+		  }
+	  }
   }
   &__link {
-	display: block;
+	display: inline-flex;
   }
   &__img {
 	border-radius: 2px;

@@ -20,7 +20,7 @@
 }
 
 @mixin largeMobile {
-  @media (min-width: #{$largeMobileWidth}) {
+  @media (min-width: #{$largeMobileWidth}) and (max-width: 968px) {
     @content;
   }
 }
