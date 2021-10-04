@@ -8,6 +8,10 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+  g[aria-labelledby="id-72-title"] {
+    display: none !important;
+  }
+
   @include mobile() {
     padding: 0 15px;
     margin-top: 40px;

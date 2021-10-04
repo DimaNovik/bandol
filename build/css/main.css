@@ -1269,16 +1269,20 @@ template {
   .section-video__preview {
     position: relative;
     height: 420px;
+    min-height: 420px;
     margin-bottom: 25px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .section-video__preview {
-        height: 358px; } }
+        height: 358px;
+        min-height: 358px; } }
     @media (min-width: 767px) and (max-width: 1024px) {
       .section-video__preview {
-        height: 269px; } }
+        height: 269px;
+        min-height: 269px; } }
   .section-video__preview_img {
     width: 100%;
     max-height: 100%;
+    min-height: 100%;
     object-fit: cover; }
     @media (min-width: 320px) and (max-width: 767px) {
       .section-video__preview_img {
@@ -1337,6 +1341,8 @@ template {
   background-position: 60% 50%;
   background-size: contain;
   background-repeat: no-repeat; }
+  .section-map g[aria-labelledby="id-72-title"] {
+    display: none !important; }
   @media (min-width: 320px) and (max-width: 767px) {
     .section-map {
       padding: 0 15px;

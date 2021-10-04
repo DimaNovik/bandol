@@ -8,15 +8,15 @@ chart.projection = new am4maps.projections.Miller();
 chart.seriesContainer.draggable = false;
 chart.seriesContainer.resizable = false;
 chart.seriesContainer.wheelable = false;
+chart.maxZoomLevel = 1;
 
 let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 polygonSeries.useGeodata = true;
 
 let polygonTemplate = polygonSeries.mapPolygons.template;
-console.log('ee',polygonTemplate);
 polygonTemplate.tooltipText = "{name}";
 polygonTemplate.fill = am4core.color("#477A6C");
-polygonTemplate.wheelable = false;
+
 let hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#FED3C3");
 polygonSeries.mapPolygons.template.events.on("hit", function(ev) {
