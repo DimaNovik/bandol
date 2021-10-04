@@ -3,7 +3,7 @@
   padding: 30px 80px 80px 207px;
 
   @include mobile() {
-    padding: 30px 15px 80px 15px;
+    padding: 15px 15px 45px 15px;
   }
 
   @include tablet() {
@@ -16,7 +16,7 @@
     margin-bottom: 35px;
 
     @include mobile() {
-
+      margin-bottom: 32px;
     }
   }
 
@@ -29,6 +29,7 @@
     @include mobile() {
       height: 358px;
       min-height: 358px;
+      margin-bottom: 20px;
     }
     @include tablet() {
       height: 269px;

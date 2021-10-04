@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
 
   @include mobile() {
-    padding: 30px 15px 30px 15px;
+    height: 92vh;
+    padding: 30px 15px 23px 15px;
   }
 
   &__title {

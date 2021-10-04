@@ -1,21 +1,35 @@
 .slider-list {
   &__item {
-	width: 110px;
-	height: 70px;
 	&:not(:last-child) {
 	  margin-bottom: 20px;
 	}
 
+	@include mobile() {
+		&:not(:last-child) {
+			margin-bottom: 0;
+			margin-right: 5px;
+		}
+	}
+	@include tablet() {
+		&:not(:last-child) {
+			margin-bottom: 13px;
+		}
+	}
+  }
+  &__link {
+	display: block;
+	width: 110px;
+	height: 70px;
+
+	  @include mobile() {
+		  width: 65px;
+		  height: 38px;
+	  }
+
 	  @include tablet() {
 		  width: 74px;
 		  height: 47px;
-		  &:not(:last-child) {
-			  margin-bottom: 13px;
-		  }
 	  }
-  }
-  &__link {
-	display: inline-flex;
   }
   &__img {
 	border-radius: 2px;

@@ -1,6 +1,12 @@
 .logo {
+  display: inline-flex;
   width: 97px;
   height: 25px;
+
+  @include mobile() {
+    width: 65px;
+    height: 16px;
+  }
 
   &__img {
 	max-width: 100%;

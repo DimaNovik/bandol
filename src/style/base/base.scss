@@ -29,8 +29,12 @@ button {
 .desktop {
   display: block;
 
-  @media screen and (max-width: 920px){
-    display: none;
+  @include tablet() {
+    display: none !important;
+  }
+
+  @include mobile() {
+    display: none !important;
   }
 }
 

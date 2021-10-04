@@ -84,8 +84,8 @@
 	letter-spacing: .8px;
 
 	  @include mobile() {
-		  font-size: 8px;
-		  line-height: 10px;
+		  font-size: 12px;
+		  line-height: 14px;
 	  }
 	  @include tablet() {
 		  font-size: 8px;
