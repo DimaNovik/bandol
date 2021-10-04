@@ -10,6 +10,10 @@
 	border-radius: 20px;
 	border: 1px solid $white;
 
+	  @include tablet() {
+		  width: 56px;
+		  height: 20px;
+	  }
 
 	.icon {
 	  width: 12px;
@@ -39,6 +43,16 @@
 		height: 14px;
 	  }
 	}
+
+	@include tablet() {
+		width: 54px;
+		height: 54px;
+
+		svg {
+			width: 12px;
+			height: 14px;
+		}
+	}
   }
 
   &--black {
@@ -60,5 +74,14 @@
 	.text {
 		margin: 0 10px
 	}
+
+	  @include mobile() {
+		  width: 77px;
+		  height: 77px;
+
+		  .text {
+			  font-size: 14px;
+		  }
+	  }
   }
 }

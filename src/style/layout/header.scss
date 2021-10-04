@@ -9,6 +9,10 @@
   @include mobile() {
 	padding: 10px 15px;
   }
+  @include tablet() {
+    padding: 30px 40px;
+  }
+
 
   &__wrapper {
 	display: flex;

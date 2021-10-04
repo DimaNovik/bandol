@@ -6,6 +6,10 @@
     padding: 30px 15px 32px;
   }
 
+  @include largeMobile() {
+    padding: 30px 40px 32px;
+  }
+
   &__top {
     width: 100px;
     text-align: center;
@@ -25,24 +29,44 @@
       padding: 13px 0 22px 0;
     }
 
+    @include largeMobile() {
+      justify-content: space-between;
+      padding: 33px 0 42px 0;
+    }
+
     .title {
       font-weight: 700;
       letter-spacing: 2.4px;
     }
   }
   &__middle_left {
+
     padding-right: 140px;
     border-right: 1px solid $green2;
 
     @include mobile() {
+      width: 100%;
       padding-right: 0;
+      margin-top: 20px;
       border-right: none;
+    }
+
+    @include largeMobile() {
+      width: 47%;
+      padding-right: 15px;
     }
   }
   &__middle_right {
     padding-left: 137px;
 
     @include mobile() {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    @include largeMobile() {
+      width: 49%;
       padding-left: 0;
     }
   }
