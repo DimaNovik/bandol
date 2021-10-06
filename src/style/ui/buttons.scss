@@ -33,6 +33,8 @@
 	height: 109px;
 	border-radius: 50%;
 	background-color: $orange;
+	transition: transform .3s ease;
+
 
 	@include mobile() {
 	  width: 54px;

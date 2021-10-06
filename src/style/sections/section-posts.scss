@@ -4,6 +4,7 @@
   @include mobile() {
 	padding: 60px 15px 60px 15px;
   }
+
   &__title {
 	display: flex;
 	padding-left: 80px;
@@ -14,26 +15,32 @@
 	  padding-left: 0;
 	  padding-right: 0;
 
-		.title {
-			font-size: 34px;
-			line-height: 32px;
-		}
+	  .title {
+		font-size: 34px;
+		line-height: 32px;
+	  }
 	}
 
 	@include tablet() {
-		padding-left: 40px;
+	  padding-left: 40px;
 	}
   }
+
   &__more {
 	padding-top: 20px;
 
-	  @include mobile() {
-		  padding-top: 0;
-		  padding-bottom: 5px;
-		  font-size: 8px;
-		  line-height: 10px;
-	  }
+	@include tablet() {
+	  padding-top: 0;
+	}
+
+	@include mobile() {
+	  padding-top: 0;
+	  padding-bottom: 5px;
+	  font-size: 8px;
+	  line-height: 10px;
+	}
   }
+
   &__title_right {
 	flex: 1;
 	padding-left: 0;
@@ -48,6 +55,7 @@
 	  }
 	}
   }
+
   &__posts {
 	display: flex;
 	flex-wrap: wrap;
@@ -55,11 +63,12 @@
 	padding-left: 0px;
 	margin-top: 80px;
 
-	  @include mobile() {
-		  margin-top: 88px;
-	  }
+	@include mobile() {
+	  margin-top: 88px;
+	}
 
   }
+
   &__btn {
 	display: flex;
 	justify-content: center;
@@ -67,7 +76,7 @@
 
 	@include mobile() {
 	  padding-left: 0;
-		margin-top: -45px;
+	  margin-top: -45px;
 	}
   }
 }

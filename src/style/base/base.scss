@@ -29,10 +29,6 @@ button {
 .desktop {
   display: block;
 
-  @include tablet() {
-    display: none !important;
-  }
-
   @include mobile() {
     display: none !important;
   }
@@ -77,15 +73,10 @@ svg {
   &__post {
     width: 890px;
     max-width: 100%;
-    margin: 0 auto 0 23.5%;
 
-    @include mobile() {
-      margin: 0 auto;
-    }
 
     @include tablet() {
       width: 700px;
-      margin: 0 auto;
       padding: 0;
     }
   }

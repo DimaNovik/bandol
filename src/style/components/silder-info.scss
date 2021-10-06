@@ -3,6 +3,10 @@
   padding: 10px 0;
   background-color: $black3;
 
+  @include mobile() {
+	border-radius: 0;
+  }
+
   &__wrapper {
 	display: flex;
 	align-items: center;
@@ -13,6 +17,10 @@
 	padding: 20px 5px 15px 5px;
 	border-top: 1px solid rgba($white, .6);
 	border-bottom: 1px solid rgba($white, .6);
+
+	@include mobile() {
+	  padding: 20px 5px 20px 5px;
+	}
   }
 
   &__place {
@@ -67,4 +75,14 @@
 			margin-left: 20px;
 		}
 	}
+
+  &__mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 5px;
+	border-top: 1px solid rgba($white, .6);
+  }
 }
