@@ -1,0 +1,20 @@
+.phil-list {
+  margin: 14px -10px 0 -80px;
+  overflow: hidden;
+
+  &__item {
+	border-top: 1px solid rgba(#FFFFFF, .1);
+	padding: 18px 0;
+	white-space: nowrap;
+
+	&:last-child {
+	  border-bottom: 1px solid rgba(#FFFFFF, .1);
+	}
+
+	.title {
+		-webkit-text-fill-color: transparent;
+	  -webkit-text-stroke: 1px $white;
+
+	}
+  }
+}

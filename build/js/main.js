@@ -23,6 +23,9 @@ hs.properties.fill = am4core.color("#FED3C3");
 polygonSeries.mapPolygons.template.events.on("hit", function(ev) {
 
 });
+const swiper = new Swiper(".slider", {
+
+});
 let videoPreview = document.querySelector('.section-video__preview');
 let videoPreviewBtn = document.querySelector('.section-video__play');
 
