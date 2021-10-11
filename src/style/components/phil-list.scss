@@ -1,10 +1,12 @@
 .phil-list {
-  margin: 14px -10px 0 -80px;
-  overflow: hidden;
+  margin: 15px -10px 0 -80px;
+  //overflow-x: hidden;
+  //overflow-y: auto;
 
   &__item {
+	position: relative;
 	border-top: 1px solid rgba(#FFFFFF, .1);
-	padding: 18px 0;
+	padding: 0px 0;
 	white-space: nowrap;
 
 	&:last-child {
@@ -12,9 +14,86 @@
 	}
 
 	.title {
-		-webkit-text-fill-color: transparent;
-	  -webkit-text-stroke: 1px $white;
+		z-index: 2;
+	}
+  }
 
+  &__decor {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+
+	&--1 {
+	  width: 188px;
+	  height: 90px;
+	  margin-right: 34px;
+	  margin-top: -15px;
+	}
+
+	&--2 {
+	  width: 159px;
+	  height: 146px;
+	  margin-right: 80px;
+	  margin-top: -24px;
+	}
+
+	&--3 {
+	  width: 162px;
+	  height: 209px;
+	  margin-right: 130px;
+	  margin-top: -70px;
+	}
+  }
+}
+
+.phil-desk {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0;
+
+  @include mobile() {
+	flex-wrap: wrap;
+  }
+
+  &__item {
+	display: flex;
+
+	@include mobile() {
+	  &:nth-child(1) {
+		margin-bottom: 30px;
+	  }
+	}
+
+	&--left {
+	  max-width: 110px;
+	  margin-right: 17px;
+
+	  @include mobile() {
+		margin-right: 5px;
+	  }
+	  .text-xxs {
+		color: rgba($white, .6)
+	  }
+	}
+	&--right {
+	  padding-top: 30px;
+	  max-width: 320px;
+
+	  @include mobile() {
+		padding-top: 10px;
+	  }
+
+	  .text {
+		text-indent: 110px;
+
+		@include tablet() {
+		  text-indent: 80px;
+		}
+		@include mobile() {
+		  text-indent: 180px;
+		}
+	  }
 	}
   }
 }

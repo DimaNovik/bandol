@@ -207,6 +207,9 @@ svg {
       .container__post {
         width: 700px;
         padding: 0; } }
+  .container__phil {
+    width: 970px;
+    max-width: 100%; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -686,8 +689,12 @@ template {
   margin: 0; }
   .title-xlg {
     font-size: 87px;
-    line-height: 121px;
+    line-height: 111px;
     letter-spacing: -0.5px; }
+    @media (min-width: 767px) and (max-width: 1024px) {
+      .title-xlg {
+        font-size: 60px;
+        line-height: 90px; } }
   .title-lg {
     font-size: 60px;
     line-height: 54px; }
@@ -777,11 +784,19 @@ template {
   .text-xxs {
     font-size: 10px;
     line-height: 18px; }
+    @media (min-width: 767px) and (max-width: 1024px) {
+      .text-xxs {
+        font-size: 8px;
+        line-height: 12px; } }
   .text-xxs2 {
     font-size: 10px;
     line-height: 12px; }
   .text-margin {
     margin-top: 30px; }
+
+.transparent {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #ffffff; }
 
 .header {
   position: -webkit-sticky;
@@ -1201,17 +1216,75 @@ template {
     line-height: 12px; } }
 
 .phil-list {
-  margin: 14px -10px 0 -80px;
-  overflow: hidden; }
+  margin: 15px -10px 0 -80px; }
   .phil-list__item {
+    position: relative;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 18px 0;
+    padding: 0px 0;
     white-space: nowrap; }
     .phil-list__item:last-child {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
     .phil-list__item .title {
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px #ffffff; }
+      z-index: 2; }
+  .phil-list__decor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+    .phil-list__decor--1 {
+      width: 188px;
+      height: 90px;
+      margin-right: 34px;
+      margin-top: -15px; }
+    .phil-list__decor--2 {
+      width: 159px;
+      height: 146px;
+      margin-right: 80px;
+      margin-top: -24px; }
+    .phil-list__decor--3 {
+      width: 162px;
+      height: 209px;
+      margin-right: 130px;
+      margin-top: -70px; }
+
+.phil-desk {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 90px 0; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .phil-desk {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .phil-desk__item {
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .phil-desk__item:nth-child(1) {
+        margin-bottom: 30px; } }
+    .phil-desk__item--left {
+      max-width: 110px;
+      margin-right: 17px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .phil-desk__item--left {
+          margin-right: 5px; } }
+      .phil-desk__item--left .text-xxs {
+        color: rgba(255, 255, 255, 0.6); }
+    .phil-desk__item--right {
+      padding-top: 30px;
+      max-width: 320px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .phil-desk__item--right {
+          padding-top: 10px; } }
+      .phil-desk__item--right .text {
+        text-indent: 110px; }
+        @media (min-width: 767px) and (max-width: 1024px) {
+          .phil-desk__item--right .text {
+            text-indent: 80px; } }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .phil-desk__item--right .text {
+            text-indent: 180px; } }
 
 .section-slider__poster {
   position: relative;
@@ -1503,14 +1576,19 @@ template {
 
 .section-phil {
   height: 100vh;
-  padding: 30px 10px 30px 80px;
+  padding: 32px 10px 30px 80px;
   background-image: url("/img/sections/phyl_fon.jpeg");
   background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    .section-phil {
+      padding: 32px 10px 30px 40px; } }
   @media (min-width: 320px) and (max-width: 767px) {
     .section-phil {
-      height: 92vh;
       padding: 30px 15px 23px 15px; } }
   .section-phil__title {
+    letter-spacing: .4px;
     color: rgba(255, 255, 255, 0.5); }

@@ -1,17 +1,23 @@
 .section-phil {
   height: 100vh;
-  padding: 30px 10px 30px 80px;
+  padding: 32px 10px 30px 80px;
   background-image: url("/img/sections/phyl_fon.jpeg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include tablet() {
+    padding: 32px 10px 30px 40px;
+  }
 
   @include mobile() {
-    height: 92vh;
     padding: 30px 15px 23px 15px;
   }
 
   &__title {
+    letter-spacing: .4px;
 	color: rgba(#FFFFFF, .5);
   }
 }

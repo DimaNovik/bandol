@@ -4,8 +4,13 @@
   margin: 0;
   &-xlg {
 	font-size: 87px;
-	line-height: 121px;
+	line-height: 111px;
 	letter-spacing: -0.5px;
+
+	@include tablet() {
+	  font-size: 60px;
+	  line-height: 90px;
+	}
   }
   &-lg {
 	font-size: 60px;
@@ -115,6 +120,11 @@
   &-xxs {
 	font-size: 10px;
 	line-height: 18px;
+
+	@include tablet() {
+	  font-size: 8px;
+	  line-height: 12px;
+	}
   }
   &-xxs2 {
 	font-size: 10px;
@@ -123,4 +133,9 @@
   &-margin {
 	margin-top: 30px;
   }
+}
+
+.transparent {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $white;
 }
