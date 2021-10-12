@@ -799,12 +799,21 @@ template {
   -webkit-text-stroke: 1px #ffffff; }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   padding: 30px 81px;
   background-color: #D4D4D4;
-  z-index: 1; }
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  z-index: 10; }
+  .header.hide {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); }
   @media (min-width: 320px) and (max-width: 767px) {
     .header {
       padding: 20px 15px; } }
@@ -1426,7 +1435,7 @@ template {
 
 .section-video {
   position: relative;
-  padding: 30px 80px 80px 207px; }
+  padding: 130px 80px 80px 207px; }
   @media (min-width: 320px) and (max-width: 767px) {
     .section-video {
       padding: 15px 15px 45px 15px; } }

@@ -1,10 +1,17 @@
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   padding: 30px 81px;
   background-color: $grey;
-  z-index: 1;
+  transition: transform .6s ease-in-out;
+  transform: translate(0, 0);
+  z-index: 10;
+
+  &.hide  {
+	transform: translate(0, -100%);
+  }
 
   @include mobile() {
 	padding: 20px 15px;

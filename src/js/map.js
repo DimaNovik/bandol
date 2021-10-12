@@ -1,4 +1,3 @@
-
 // Low-detail map
 let chart = am4core.create("map", am4maps.MapChart);
 chart.geodataNames = am4geodata_lang_RU;
@@ -12,13 +11,12 @@ chart.maxZoomLevel = 1;
 
 let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 polygonSeries.useGeodata = true;
-
+polygonSeries.events.on("hover", function (ev) {
+  console.log(ev);
+})
 let polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.tooltipText = "{name}";
 polygonTemplate.fill = am4core.color("#477A6C");
 
 let hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#FED3C3");
-polygonSeries.mapPolygons.template.events.on("hit", function(ev) {
-
-});
