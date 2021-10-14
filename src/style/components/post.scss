@@ -1,5 +1,14 @@
 .post {
   width: 370px;
+  transition: visibility .3s ease;
+
+  &.hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+  }
 
   @include mobile() {
 	width: 258px;
