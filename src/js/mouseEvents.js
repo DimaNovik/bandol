@@ -11,19 +11,11 @@
   var header = document.getElementById('header');
   
   var checkScroll = function() {
-    
-    /*
-    ** Find the direction of scroll
-    ** 0 - initial, 1 - up, 2 - down
-    */
-    
     curScroll = w.scrollY || doc.scrollTop;
     if (curScroll > prevScroll) {
-      //scrolled up
       direction = 2;
     }
     else if (curScroll < prevScroll) {
-      //scrolled down
       direction = 1;
     }
     
@@ -50,4 +42,19 @@
   
   window.addEventListener('scroll', checkScroll);
   
+})();
+
+(function playVideo () {
+  let videoTag = document.getElementById('video');
+  let playBtn = document.getElementById('play');
+  
+  playBtn.addEventListener('click', function (){
+    videoTag.play();
+    playBtn.style.visibility = 'hidden';
+  });
+  
+  videoTag.addEventListener('click', function () {
+    videoTag.pause();
+    playBtn.style.visibility = 'visible';
+  });
 })();

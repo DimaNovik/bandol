@@ -11,21 +11,30 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	  width: 90%;
-	  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 	flex-wrap: wrap;
 	padding: 20px 5px 15px 5px;
 	border-top: 1px solid rgba($white, .6);
 	border-bottom: 1px solid rgba($white, .6);
 
+	@include tablet() {
+	  width: 95%;
+	}
 	@include mobile() {
 	  padding: 20px 5px 20px 5px;
 	}
   }
 
   &__place {
-	  max-width: 400px;
-	  overflow: hidden;
+	max-width: 400px;
+	overflow: hidden;
+  }
+
+  &__year {
+	@include tablet() {
+	  padding-right: 15px;
+	}
   }
 
   &__date {
@@ -33,13 +42,15 @@
 	justify-content: center;
 
 	.text-xlg {
-		margin-top: -15px;
-		margin-left: -20px;
+	  margin-top: -15px;
+	  margin-left: -20px;
 	}
-	  .text-smm {
-		  margin-top: 20px;
-		  margin-left: -20px;
-	  }
+
+	.text-smm {
+	  margin-top: 20px;
+	  margin-left: -20px;
+	}
+
 	.line {
 	  display: block;
 	  width: 60px;
@@ -49,32 +60,37 @@
 	  background-color: $white;
 	  transform: rotate(-75deg);
 
-		@include tablet() {
-			width: 45px;
+	  @include tablet() {
+		width: 45px;
 	  }
 	}
   }
 
-  	&__btns {
+  &__btns {
 
+  }
+
+  &__counts {
+	display: flex;
+	align-items: center;
+	margin-left: 32px;
+
+	.line {
+	  display: block;
+	  width: 23px;
+	  height: 1px;
+	  margin: 0 16px;
+	  background-color: $white;
 	}
-	&__counts {
-		display: flex;
-		align-items: center;
-		margin-left: 32px;
 
-		.line {
-			display: block;
-			width: 23px;
-			height: 1px;
-			margin: 0 16px;
-			background-color: $white;
-		}
+	@include tablet() {
+	  margin-left: 5px;
 
-		@include tablet() {
-			margin-left: 20px;
-		}
+	  .line {
+		width: 10px;
+	  }
 	}
+  }
 
   &__mobile {
 	display: none;

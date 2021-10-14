@@ -7,6 +7,7 @@
   background-position: 60% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   g[aria-labelledby="id-72-title"] {
     display: none !important;
@@ -66,7 +67,20 @@
     top: 50%;
     width: 240px;
     margin-top: -10px;
-    transform: translate(0, -50%);
+    transform: translate(200%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease, transform .6s ease;
+
+    &--animate {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, -50%);
+    }
+
+    @include tablet() {
+      width: 190px;
+    }
 
     @include mobile() {
       position: relative;

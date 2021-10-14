@@ -15,8 +15,6 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-    <script src="https://www.amcharts.com/lib/4/geodata/lang/RU.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/geodata/franceLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/geodata/franceHigh.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
@@ -49,8 +47,10 @@
             <h2 class="title title-md uppercase">Витрина французского виноделия</h2>
           </div>
           <div class="section-video__preview">
-            <img src="/img/sections/video_preview.jpeg" alt="" class="section-video__preview_img">
-            <button class="button button--play section-video__play">
+            <video class="section-video__preview_img" id="video">
+              <source src="http://thenewcode.com/assets/videos/glacier.mp4" type="video/mp4">
+            </video>
+            <button class="button button--play section-video__play" id="play">
               <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.0477 1.48553L23.3579 12.0343C25.5474 13.3667 25.5474 16.6333 23.3579 17.9657L6.0477 28.5145C3.81815 29.8744 1 28.2158 1 25.5465V4.45352C1 1.78417 3.81815 0.125578 6.0477 1.48553Z" fill="#151515" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -123,7 +123,7 @@
                 <img src="../../img/sections/slider_1.jpeg" alt="" class="section-slider__img">
               </div>
               <div class="swiper-slide">
-                <img src="../../img/sections/slider_1.jpeg" alt="" class="section-slider__img">
+                <img src="../../img/sections/slider_3_mini.jpg" alt="" class="section-slider__img">
               </div>
             </div>
             <div class="section-slider__move">
@@ -185,7 +185,7 @@
                   <p class="text text-xs white">bandôl - Ваш кавист</p>
                   <p class="text text-xs white">Екатерининская площадь, 6, Одесса</p>
                 </div>
-                <div class="desktop">
+                <div class="slider-info__year desktop">
                   <p class="text white">2021</p>
                 </div>
                 <div class="slider-info__date desktop">
