@@ -34,7 +34,14 @@ let sliderInfoItem = document.querySelectorAll('.slider-info__item');
 
 function changeSliderInfo() {
   sliderInfoItem.forEach((item, key) => {
-  
+    let attrId = swiper.activeIndex;
+    if(!item.classList.contains('slider-info__item--hidden')) {
+      item.classList.add('slider-info__item--hidden');
+    }
+    
+    if(attrId === key) {
+      item.classList.remove('slider-info__item--hidden');
+    }
   })
 }
 

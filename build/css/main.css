@@ -1507,7 +1507,7 @@ template {
     -ms-flex: 1;
         flex: 1;
     padding-left: 0;
-    margin-left: -70px; }
+    margin-right: 70px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .section-posts__title_right {
         margin-left: 0; }
