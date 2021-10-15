@@ -1,10 +1,16 @@
 .slider-info {
   border-radius: 4px;
   padding: 10px 0;
+  margin-top: -2px;
   background-color: $black3;
 
   @include mobile() {
 	border-radius: 0;
+  }
+
+  @include tablet() {
+	border-radius: 0;
+	margin-top: -2px;
   }
 
   &__wrapper {
@@ -20,20 +26,65 @@
 
 	@include tablet() {
 	  width: 95%;
+	  border-radius: 2px ;
 	}
 	@include mobile() {
-	  padding: 20px 5px 20px 5px;
+	  padding: 10px 0 25px;
+	}
+  }
+
+  &__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 60%;
+	transition: opacity .3s ease-in;
+
+	&--hidden {
+	  position: absolute;
+	  clip: rect(0 0 0 0);
+	  width: 1px;
+	  height: 1px;
+	  margin: -1px;
+	  visibility: hidden;
+	  opacity: 0;
+	}
+
+	@include mobile() {
+	  width: 100%;
+	}
+
+	@include tablet() {
+	  width: 70%;
 	}
   }
 
   &__place {
 	max-width: 400px;
 	overflow: hidden;
+
+	@include mobile() {
+	  order: 3;
+	  width: 75%;
+	  padding-top: 20px;
+	}
+
+	@include tablet() {
+	  max-width: 300px;
+	}
   }
 
   &__year {
 	@include tablet() {
 	  padding-right: 15px;
+	}
+	@include mobile() {
+	  order: 1;
+	  width: 50%;
+	  padding-top: 7px;
+	  padding-bottom: 18px;
+	  border-bottom: 1px solid rgba($white, .6);
 	}
   }
 
@@ -41,14 +92,33 @@
 	display: flex;
 	justify-content: center;
 
+	@include mobile() {
+	  order: 2;
+	  width: 50%;
+	  justify-content: space-between;
+	  align-items: center;
+	  padding-bottom: 10px;
+	  border-bottom: 1px solid rgba($white, .6);
+	}
+
 	.text-xlg {
 	  margin-top: -15px;
 	  margin-left: -20px;
+
+	  @include mobile() {
+		margin-top: 0;
+		margin-left: 0;
+	  }
 	}
 
 	.text-smm {
 	  margin-top: 20px;
 	  margin-left: -20px;
+
+	  @include mobile() {
+		margin-top: 0;
+		margin-left: 0;
+	  }
 	}
 
 	.line {
@@ -70,6 +140,15 @@
 
   }
 
+  &__more {
+	@include mobile() {
+	  order: 4;
+	  width: 25%;
+	  padding-top: 20px;
+	  text-align: right;
+	}
+  }
+
   &__counts {
 	display: flex;
 	align-items: center;
@@ -89,19 +168,6 @@
 	  .line {
 		width: 10px;
 	  }
-	}
-  }
-
-  &__mobile {
-	display: none;
-	@include mobile() {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  width: 90%;
-	  margin: 0 auto;
-	  padding: 10px 5px;
-	  border-top: 1px solid rgba($white, .6);
 	}
   }
 }
